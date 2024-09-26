@@ -1,0 +1,13 @@
+<div>
+    {{#each countries}}
+<div class="countries-card">
+    <h2>{{name}}</h2>
+    <img src="{{flag}}" alt='Flag of {{name}}'>
+    <p><strong>Столиця:</strong>{{capital}}</p>
+    <p><strong>Валюта:</strong>{{currency}}</p>
+    <p><strong>Мова:</strong>{{language}}</p>
+    <p><strong>Населення:</strong>{{population}}</p>
+    <p><strong>Інфікована:</strong>{{#If infected}} Так{{else}}Ні</p>
+</div>
+{{/each}}
+</div>
